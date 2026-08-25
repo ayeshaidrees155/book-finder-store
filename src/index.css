@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-white: white;
+  --bg-gray: #F7F8FC;
+  --border-gray: #F7F8FC;
+  --purple-clr: #B48BF3;
+  --gray-clr: #7E7E7E;
+  --blue-clr: #302779;
+  -balck-clr: #28262F;
+  --bg-input: #F3F6FB;
+  --text-small: 14px
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: inherit !important;
+}
