@@ -1,8 +1,7 @@
 import React from 'react'
 import { Box, Button, Stack, Typography } from '@mui/material'
 import StyledInput from '../styledInput'
-import StyledBtn from '../styledBtn'
-import { Margin, WidthFull } from '@mui/icons-material'
+
 
 
 export default function SearchBar({ searchBook, setSearchBook }) {
@@ -38,7 +37,7 @@ export default function SearchBar({ searchBook, setSearchBook }) {
                         <Box
                             component="img"
                             src="/books.jpg"
-                            alt='error'
+                            alt='books'
                             className='!object-cover w-[100px] h-[85px] sm:w-[130px] sm:h-[110px] md:w-[150px] md:h-[130px] !rounded-xl'
                         />
                     </Box>
@@ -81,7 +80,7 @@ export default function SearchBar({ searchBook, setSearchBook }) {
                 <Box
                     component="img"
                     src='/books.jpg'
-                    alt='error'
+                    alt='books'
                     className='!object-cover !w-35 !h-40 !rounded-xl'
                 />
             </Box>
