@@ -80,7 +80,7 @@ export default function SearchBar({ searchBook, setSearchBook }) {
             <Box className="hidden lg:!flex w-[28%] !h-47 !items-center !justify-center">
                 <Box
                     component="img"
-                    src='/src/assets/books.jpg'
+                    src='/books.jpg'
                     alt='error'
                     className='!object-cover !w-35 !h-40 !rounded-xl'
                 />
