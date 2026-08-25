@@ -3,6 +3,7 @@ import { Box, Button, Stack, Typography } from '@mui/material'
 import StyledInput from '../styledInput'
 import StyledBtn from '../styledBtn'
 import { Margin, WidthFull } from '@mui/icons-material'
+import BookImg from "/src/assets/books.jpg"
 
 export default function SearchBar({ searchBook, setSearchBook }) {
 
@@ -36,7 +37,7 @@ export default function SearchBar({ searchBook, setSearchBook }) {
                     <Box className="w-[35%] sm:w-[32%] lg:!hidden !flex !items-center !justify-center">
                         <Box
                             component="img"
-                            src='/src/assets/books.jpg'
+                            src={BookImg}
                             alt='error'
                             className='!object-cover w-[100px] h-[85px] sm:w-[130px] sm:h-[110px] md:w-[150px] md:h-[130px] !rounded-xl'
                         />
