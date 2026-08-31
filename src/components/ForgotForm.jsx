@@ -1,12 +1,11 @@
 import React from 'react'
 import { Box, Typography, Stack } from '@mui/material'
-import { purple } from '@mui/material/colors'
 import StyledInput from './styledInput';
 import StyledBtn from './styledBtn';
 import { Link } from "react-router-dom"
 
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+
 
 export default function ForgotForm() {
     return (
@@ -19,6 +18,8 @@ export default function ForgotForm() {
                     type="email"
                     placeholder="Enter your email"
                     icon={<EmailOutlinedIcon className='!text-sm me-2' />}
+                    inputProps={{ style: { fontSize: '16px' } }}
+                    sx={{ '& input': { fontSize: '16px' } }}
                 />
 
 

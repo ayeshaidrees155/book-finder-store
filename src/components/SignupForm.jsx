@@ -61,6 +61,8 @@ export default function SignupForm() {
                     value={formData.userName}
                     onChange={handleChange}
                     icon={<Person2OutlinedIcon className='!text-sm me-2' />}
+                    inputProps={{ style: { fontSize: '16px' } }}
+                    sx={{ '& input': { fontSize: '16px' } }}
                 />
                 {errors.userName && <p style={{ color: "red", fontSize: "12px" }}>{errors.userName}</p>}
 
@@ -72,6 +74,8 @@ export default function SignupForm() {
                     value={formData.email}
                     onChange={handleChange}
                     icon={<EmailOutlinedIcon className='!text-sm me-2' />}
+                    inputProps={{ style: { fontSize: '16px' } }}
+                    sx={{ '& input': { fontSize: '16px' } }}
                 />
                 {errors.email && <p style={{ color: "red", fontSize: "12px" }}>{errors.email}</p>}
 
@@ -83,6 +87,8 @@ export default function SignupForm() {
                     value={formData.password}
                     onChange={handleChange}
                     icon={<LockOutlinedIcon className='!text-sm me-2' />}
+                    inputProps={{ style: { fontSize: '16px' } }}
+                    sx={{ '& input': { fontSize: '16px' } }}
                 />
                 {errors.password && <p style={{ color: "red", fontSize: "12px" }}>{errors.password}</p>}
 

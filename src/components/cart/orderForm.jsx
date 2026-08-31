@@ -4,11 +4,6 @@ import StyledInput from '../styledInput'
 
 
 export default function OrderForm({ formData, handleChange }) {
-
-
-
-
-
     return (
         <Box className="!w-full !h-auto  !py-8 !px-4 !flex !justify-center !items-start max-md:!h-auto">
 
@@ -30,7 +25,11 @@ export default function OrderForm({ formData, handleChange }) {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            sx={{ marginX: 0 }}
+                            sx={{
+                                marginX: 0,
+                                "& input": { fontSize: "16px" }
+                            }}
+                            inputProps={{ style: { fontSize: "16px" } }}
                         />
                     </Stack>
                     <Stack className='!flex !lfex-col !my-2'>
@@ -41,8 +40,11 @@ export default function OrderForm({ formData, handleChange }) {
                             value={formData.lastName}
                             onChange={handleChange}
                             required
-                            sx={{ marginX: 0 }}
-                        />
+                            sx={{
+                                marginX: 0,
+                                "& input": { fontSize: "16px" }
+                            }}
+                            inputProps={{ style: { fontSize: "16px" } }} />
                     </Stack>
                     <Stack className='!flex !lfex-col !my-2'>
                         <Typography variant="" className='text-(--gray-clr) text-sm'>Email  <span className='text-red-500'>*</span></Typography>
@@ -52,8 +54,11 @@ export default function OrderForm({ formData, handleChange }) {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            sx={{ marginX: 0 }}
-                        />
+                            sx={{
+                                marginX: 0,
+                                "& input": { fontSize: "16px" }
+                            }}
+                            inputProps={{ style: { fontSize: "16px" } }} />
                     </Stack>
                     <Stack className='!flex !lfex-col !my-2'>
                         <Typography variant="" className='text-(--gray-clr) text-sm '>Phone <span className='text-red-500'>*</span></Typography>
@@ -63,8 +68,11 @@ export default function OrderForm({ formData, handleChange }) {
                             value={formData.phone}
                             onChange={handleChange}
                             required
-                            sx={{ marginX: 0 }}
-                        />
+                            sx={{
+                                marginX: 0,
+                                "& input": { fontSize: "16px" }
+                            }}
+                            inputProps={{ style: { fontSize: "16px" } }} />
                     </Stack>
                     <Stack className='!flex !lfex-col !my-2'>
                         <Typography variant="" className='text-(--gray-clr) text-sm'>City <span className='text-red-500'>*</span></Typography>
@@ -74,8 +82,11 @@ export default function OrderForm({ formData, handleChange }) {
                             value={formData.city}
                             onChange={handleChange}
                             required
-                            sx={{ marginX: 0 }}
-                        />
+                            sx={{
+                                marginX: 0,
+                                "& input": { fontSize: "16px" }
+                            }}
+                            inputProps={{ style: { fontSize: "16px" } }} />
                     </Stack>
                     <Stack className='!flex !lfex-col !my-2'>
                         <Typography variant="" className='text-(--gray-clr) text-sm'>Address <span className='text-red-500'>*</span></Typography>
@@ -85,8 +96,11 @@ export default function OrderForm({ formData, handleChange }) {
                             value={formData.address}
                             onChange={handleChange}
                             required
-                            sx={{ marginX: 0 }}
-                        />
+                            sx={{
+                                marginX: 0,
+                                "& input": { fontSize: "16px" }
+                            }}
+                            inputProps={{ style: { fontSize: "16px" } }} />
                     </Stack>
                 </Box>
             </Box>

@@ -52,8 +52,11 @@ export default function SearchBar({ searchBook, setSearchBook }) {
                             onChange={handleChange}
                             sx={{
                                 "& fieldset": { border: "none" },
-                                width: "100%"
+                                width: "100%",
+
+                                "& input": { fontSize: "16px" }
                             }}
+                            inputProps={{ style: { fontSize: "16px" } }}
                             placeholder="Write Title Here"
                             className="!px-3 !py-1.5 sm:!py-2 !text-[clamp(0.75rem,1.1vw,1rem)] w-full"
                         />
